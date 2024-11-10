@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conocé Perico</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, orange, yellow);
+			display: flex;
+            flex-direction: column;
+			min-height: 100vh; /* Altura mínima igual a la pantalla */
+        }
+
+		p {
+			margin-top: 25px;
+            margin-left: 50px;
+			margin-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    CONOCÉ PERICO
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="lugares.html">Lugares</a>
+    <a href="agro.html">Agro</a>
+    <a href="comercio.html">Comercio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="acerca.html">Acerca de</a>
+</nav>
+
+ <div class="custom-text">
+	<p>
+        Aunque las localidades de Perico de San Antonio y El Carmen de Perico fueron fundadas un siglo antes, la población más próspera del valle no sería fundada sino hasta el siglo XX, cuando la Legislatura Provincial crea mediante la Ley N.º 227 la comisión municipal de Estación Perico el día 29 de octubre de 1913. 
+    </p>
+    <p>
+        Durante los años 1910, comienza la construcción de las dos líneas de ferrocarril que confluyen en Perico: la primera comunicaba a la ciudad de San Salvador de Jujuy con Buenos Aires, y la segunda nace aquí para llegar hasta la ciudad salteña de Pocitos (actualmente Salvador Mazza), en el límite con Bolivia, aunque al año 2006 solo funcionaba esta última. Es entonces cuando la zona comienza a ser llamada Estación Perico, aunque también se la conoció como Senda de Medina, Juan Domingo Perón y Ciudad de Don Nicolás Lamas ,por ser esta familia junto a su esposa Doña Mehye Abud, ambos inmigrantes provenientes de Siria-Libano, en prácticamente fundar la Ciudad desde sus inicios, habiendo ellos donado las tierras donde se construiría la primera estación ferrocarril de la Ciudad. La línea de ferrocarril conformó una zona conocida en la provincia como el Ramal, sobre la cual se desarrollaron las ciudades con más crecimiento de la provincia (como San Pedro de Jujuy y Libertador General San Martín), Ciudad Perico puede considerarse una de ellas ya que se ubica en la cabecera del ramal.
+    </p>
+    <p>
+		Con el tiempo, Perico se diversificó y fue creciendo en infraestructura y población. Hoy en día, es una ciudad en expansión que mantiene su herencia agrícola, pero también ha incorporado otros sectores económicos, como el comercio y la industria. Además, su cercanía a San Salvador de Jujuy le ha permitido consolidarse como un centro de conexión entre distintas localidades de la provincia.
+    </p>
+ </div>
+   
+<div class="slideshow-container fade">
+
+  <!-- imagenes con nuemros y pie de pagina -->
+  <div class="Containers">
+    <div class="MessageInfo">1 / 3</div>
+    <img src="images/hist1.png" style="width:100%">
+    <div class="Info">Antigua locomotora y trabajadores ferroviarios</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">2 / 3</div>
+    <img src="images/hist2.png" style="width:100%">
+    <div class="Info">Casa antigua</div>
+  </div>
+
+  <div class="Containers">
+    <div class="MessageInfo">3 / 3</div>
+    <img src="images/hist3.png" style="width:100%">
+    <div class="Info">Concurrido negocio local</div>
+  </div>
+
+  <!-- botones de atras y adelante -->
+  <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- puntos -->
+<div style="text-align:center">
+  <span class="dots" onclick="currentSlide(1)"></span>
+  <span class="dots" onclick="currentSlide(2)"></span>
+  <span class="dots" onclick="currentSlide(3)"></span>
+</div> 
+<!-- pie de pagina -->
+<footer>
+  <p>Contactanos en nuestras redes sociales:</p>
+  <div class="social-buttons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/instagram_icon-instagram_buttoninstegram-512.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+      <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-512.png" alt="WhatsApp">
+    </a>
+  </div>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
