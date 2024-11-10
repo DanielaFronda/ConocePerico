@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conocé Perico</title>
+	<link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, orange, yellow);
+			display: flex;
+            flex-direction: column;
+			min-height: 100vh; /* Altura mínima igual a la pantalla */
+        }
+
+		p {
+			margin-top: 25px;
+            margin-left: 50px;
+			margin-right: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    CONOCÉ PERICO
+</header>
+
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="historia.html">Historia</a>
+    <a href="lugares.html">Lugares</a>
+    <a href="agro.html">Agro</a>
+    <a href="comercio.html">Comercio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="acerca.html">Acerca de</a>
+</nav>
+
+  <table>
+    <tr>
+      <td><img src="images/ti1.png" alt="Imagen 1" onclick="openModal(this.src, 'Plaza San Matín')"></td>
+      <td><img src="images/ti2.png" alt="Imagen 2" onclick="openModal(this.src, 'Parque 20 de Junio')"></td>
+      <td><img src="images/ti3.png" alt="Imagen 3" onclick="openModal(this.src, 'Estación de Tren')"></td>
+    </tr>
+    <tr>
+      <td><img src="images/ti4.png" alt="Imagen 4" onclick="openModal(this.src, 'Estadio Plinio Zabala')"></td>
+      <td><img src="images/ti5.png" alt="Imagen 5" onclick="openModal(this.src, 'Parque Industrial')"></td>
+      <td><img src="images/ti6.png" alt="Imagen 6" onclick="openModal(this.src, 'Camping Parque El Retorno')"></td>
+    </tr>
+  </table>
+  
+  <dialog id="modal">
+    <img id="modal-image" src="" alt="Imagen Modal">
+    <div class="modal-footer" id="modal-footer">Texto de pie de página</div>
+    <button onclick="closeModal()">Cerrar</button>
+  </dialog>
+  
+<div class="content">
+  <p>Contenido de ejemplo que se ajusta a la página.</p>
+</div>
+
+<!-- pie de pagina -->
+<footer>
+  <p>Contactanos en nuestras redes sociales:</p>
+  <div class="social-buttons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="Facebook">
+    </a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+      <img src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/instagram_icon-instagram_buttoninstegram-512.png" alt="Instagram">
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
+      <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-512.png" alt="WhatsApp">
+    </a>
+  </div>
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
