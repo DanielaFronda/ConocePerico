@@ -20,6 +20,12 @@
             margin-left: 50px;
 			margin-right: 50px;
         }
+		table {
+			width: auto;
+			margin: 0 auto; /* Centra la tabla horizontalmente */
+			border-collapse: collapse;
+			text-align: center;
+		}
     </style>
 </head>
 
@@ -40,49 +46,87 @@
     <a href="acerca.html">Acerca de</a>
 </nav>
 
-<!-- botones -->
-<div class="container" style="display: flex; gap: 30px; margin-top: 1px;  justify-content: center; align-items: center; ">
-  <button onclick="window.modal1.showModal();">Policia</button>
-  <button onclick="window.modal2.showModal();">Bomberos</button>
-  <button onclick="window.modal3.showModal();">Emergencias</button>
-  <button onclick="window.modal4.showModal();">Aeropuerto</button>
-  <button onclick="window.modal5.showModal();">Hospedaje</button>
-  <button onclick="window.modal6.showModal();">Taxi</button>
-</div>
-
-<!-- Ventanas modales -->
-<dialog id="modal1">
-  <h3>¡Esto es una ventana modal 1!</h3>
-  <button onclick="window.modal1.close();">Volver</button>
-</dialog>
-<dialog id="modal2">
-  <h3>¡Esto es una ventana modal 2! asdjkasdhjkash jkhafkjsfh kjahsfjka hkjashf kjashfkj ashf kjashf</h3>
-  <button onclick="window.modal2.close();">Volver</button>
-</dialog>
-<dialog id="modal3">
-  <h3>¡Esto es una ventana modal 3!</h3>
-  <button onclick="window.modal3.close();">Volver</button>
-</dialog>
-<dialog id="modal4">
-  <h3>¡Esto es una ventana modal 4!</h3>
-  <button onclick="window.modal4.close();">Volver</button>
-</dialog>
-<dialog id="modal5">
-  <h3>¡Esto es una ventana modal 5!</h3>
-  <button onclick="window.modal5.close();">Volver</button>
-</dialog>
-<dialog id="modal6">
-  <h3>¡Esto es una ventana modal 6!</h3>
-  <button onclick="window.modal6.close();">Volver</button>
-</dialog>
+<table>
+  <tr>
+    <td>
+      <div class="card2">
+        <div class="content2">
+          <div class="frontcard">POLICIA</div>
+          <div class="backcard" style="font-size: 10px">
+            <p>COMISARIA N° 21</p>
+            <p>Escolástico Zegada Nº 441</p>
+            <p>388-4911201</p>
+			</div>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card2">
+        <div class="content2">
+          <div class="frontcard">BOMBEROS</div>
+          <div class="backcard" style="font-size: 10px">
+            <p>CUARTEL DE BOMBEROS</p>
+            <p>Av. Rivadavia S/N</p>
+            <p>388-4237762</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card2">
+        <div class="content2">
+          <div class="frontcard">EMERGENCIAS</div>
+          <div class="backcard" style="font-size: 10px">
+            <p>HOSPITAL ARTURO ZABALA</p>
+            <p>Leandro Niceforo Alem s/n</p>
+            <p>388-491-1200</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <div class="card2">
+        <div class="content2">
+          <div class="frontcard">DEFENSA CIVIL</div>
+          <div class="backcard" style="font-size: 10px">
+            <p>OFICINA DEF. CIVIL</p>
+            <p>0800-1990025</p>
+            <p>23 de Agosto 163</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card2">
+        <div class="content2">
+          <div class="frontcard">TRANSPORTE</div>
+          <div class="backcard" style="font-size: 10px">
+            <p>RADIO TAXI 25 DE MAYO</p>
+            <p>388 517-6696</p>
+            <p>Avenida Villafañe 565</p>
+        </div>
+      </div>
+    </td>
+    <td>
+      <div class="card2">
+        <div class="content2">
+          <div class="frontcard">AEROPUERTO</div>
+          <div class="backcard" style="font-size: 10px">
+            <p>AEROPUERTO HORACIO GUZMAN</p>
+            <p>3884243686</p>
+            <p>Ruta N. 66 Km. 5</p>
+        </div>
+      </div>
+    </td>
+  </tr>
+</table>
 
 <div class="content">
-  <h1>Bienvenido a nuestra página</h1>
-  <p>Contenido de ejemplo que se ajusta a la página.</p>
-</div>
+
+</div>	
+
 <!-- pie de pagina -->
 <footer>
-  <p>Contactanos en nuestras redes sociales:</p>
+  <p>DANIELA FRONDA - 2024</p>
   <div class="social-buttons">
     <a href="https://facebook.com" target="_blank" aria-label="Facebook">
       <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png" alt="Facebook">
